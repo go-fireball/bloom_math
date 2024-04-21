@@ -13,7 +13,10 @@ class HomePage extends StatelessWidget {
               .zero, // Makes the edges sharp, maintaining a square shape
         ));
     return Scaffold(
-      appBar: AppBar(title: const Text('Bloom Math')),
+      appBar: AppBar(
+        title: const Text('Bloom Math'),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
